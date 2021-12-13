@@ -6,7 +6,7 @@ class Main
 	def initialize
 		@diff_types = ["🆕","⬆️", "⬇️", "➡️"]
 	end
-	def make_ranking(date = "20211203")
+	def make_ranking(date = "20211210")
 		json = File.read("./json/#{date}_ranking.json",encodung:'utf-8')
 		json = JSON.parse(json)
 		h1 = json['date']
@@ -33,3 +33,9 @@ end
 
 
 main = Main.new().make_ranking()
+
+
+
+
+
+
