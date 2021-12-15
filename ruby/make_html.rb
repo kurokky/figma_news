@@ -26,6 +26,8 @@ class Main
 			else
 				html += '<i>' + li['ranking'].to_s + '</i>'
 			end
+
+			html += "<img src=\"https://www.figma.com/community/plugin/#{li["plugin_id"].to_s}/icon\" width=\"32\" height=\"32\">"
 			html += '<a href="https://www.figma.com/community/plugin/' + li["plugin_id"].to_s + '">'
 			html += li['plugin_name'] + '</a>'
 			html += ' <b>(' + li['diff_count'].to_s.reverse.gsub( /(\d{3})(?=\d)/, '\1,').reverse + 'DL)</b>'
@@ -44,7 +46,7 @@ class Main
 end
 
 
-main = Main.new().make_ranking(20211210, true)
+main = Main.new().make_ranking(20211203, true)
 
 
 
