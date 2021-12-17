@@ -60,7 +60,8 @@ width:100%;
 z-index:1;
 }
 
-header time{
+
+header nav{
 background:#000;
 width:1008px;
 margin:0 auto;
@@ -69,6 +70,14 @@ display:flex;
 align-items: center;
 text-align:center;
 box-sizing: border-box;
+}
+
+header nav a{
+	padding:16px;
+}
+
+header nav time{
+	flex:1;
 }
 
 h1{
@@ -83,7 +92,13 @@ h1{
 </style>
 </head>
 <body>
-<header><time><h1>Figma Weekly Ranking 2021/12/03</h1></time></header>
+<header>
+<nav>
+	<a href="" target="_self">&lt; last week</a>
+	<time><h1>Figma Weekly Ranking 2021/12/03</h1></time>
+	<a href="20211210_original.html" target="_self">next week &gt;</a>
+</nav>
+</header>
 <main>
 <ul>
 <li><i>1</i>🆕<img src="https://www.figma.com/community/plugin/990188175789012011/icon" width="32" height="32"><a href="https://www.figma.com/community/plugin/990188175789012011">PixCut Background Remover</a> <b>(12,979DL)</b></li>
