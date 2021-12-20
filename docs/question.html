@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="utf-8" />
+<title>Figma Plugin Weekly Ranking | Question </title>
+<link rel="shortcut icon" href="fv.ico">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./css/base.css">
+</head>
+<body>
+<header>
+<div>
+	<h1>Questions and Cautions</h1>
+</div>
+<nav>
+	<a onclick="history.back(-1);return false" target="_self">&lt; Back</a>
+</nav>
+</header>
+<main>
+<p class="en">Questions</p>
+<p class="ja">質問</p>
+<dl class="en">
+	<dt>Why do you make this site?</dt>
+	<dd>Because, <a href="https://www.figma.com/community" target="_blank">Figma Community</a> is NOT kind for me.</dd>
+	<dt>What's not kind for you? </dt>
+	<dd>Because even if I sort(Installs/Last updated) the list on the official site, only famous plugins are displayed and it is difficult to find the plugins you really want to find.</dd>
+	<dt>How does the ranking algorithm?</dt>
+	<dd>Basic Ranking excludes plugins that have been released more than 6 months after their v1.0.0 release and have once exceeded 1000 DL. And then, It also excludes those that do not have 10 DL per week.</dd>
+	<dt>Why tags are few?</dt>
+	<dd>The developer can insert many tags in the Plugin page, but I think five important tags are enough.</dd>
+	<dt>Do you have any plans to make RSS or Push service?</dt>
+	<dd>I might do it if I have time.</dd>
+	<dt>When will it be updated?</dt>
+	<dd>It's on every Friday, Japan time.</dd>
+	<dt>Are there any plans to create rankings other than the basic rankings (Legend, etc.)?</dt>
+	<dd>Of course! But, better than nothing.</dd>
+	<dt>When did you start making this?</dt>
+	<dd>Feb 3rd, 2021.</dd>
+	<dt>Do you have any recommendations?</dt>
+	<dd>I developed some plugins. <a href="https://www.figma.com/community/plugin/1045498965938708372/Multi-Renamer">Multi Renamer</a> <a href="https://www.figma.com/community/plugin/1043058429181195560/Don't-Need">Don't Need</a></dd>
+</dl>
+<dl class="ja">
+	<dt>なぜ、このサイトを作ったのですか?</dt>
+	<dd>公式のプラグイン探す時に探しにくかったからです。</dd>
+	<dt>探しにくいってどういうことですか？</dt>
+	<dd>現在の公式のUpdatedやインストール数のソートだと定番のものばかりになってしまって…詳しくはNoteの記事を見てください。</dd>
+	<dt>どうやって定番を除いたランキングしてるんですか？</dt>
+	<dd>初回リリースから半年以上経って、集計開始から一度でも1,000DLを超えているものは（これを個人的にレジェンドプラグインを呼んでます）除外しています。</dd>
+	<dt>なんかタグ情報が少ない気がしますけど？</dt>
+	<dd>今のプラグインのページだと10個以上とかタグ付けれるんですが、そんなにあっても意味ないなぁと。上から？5個で十分じゃないですかね？</dd>
+	<dt>RSSやPushサービスをやる気はありますか？</dt>
+	<dd>まぁ、ドメインとって色々時間あったらやりたいなぁと。無理やりGithubpagesでやってるからどこかサーバーを借りたらやる予定です。</dd>
+	<dt>いつ最新データになりますか？</dt>
+	<dd>毎週金曜の夜中です。（集計バッチの時間によります。）</dd>
+	<dt>BASICランキングじゃなくて、レジェンドプラグインや定番ランキングなどを作る予定はありますか？</dt>
+	<dd>一応、心にはあるんですよ？心には…　まぁ、デザインとかその辺ちゃんとやってドメイン取ってからかなぁ…</dd>
+	<dt>集計開始したのいつからですか？</dt>
+	<dd>2021年12月3日からです。</dd>
+	<dt>おすすめのプラグインはありますか？?</dt>
+	<dd>私が作った<a href="https://www.figma.com/community/plugin/1045498965938708372/Multi-Renamer">Multi Renamer</a> <a href="https://www.figma.com/community/plugin/1043058429181195560/Don't-Need">Don't Need</a>です！（いや、自分で探すのがこのサイトの目的なので自分で探しましょう。）</dd>
+</dl>
+<p class="en">Cautions</p>
+<p class="ja">注意事項</p>
+<ul class="en">
+	<li>
+	The ranking data on this site is an independent compilation.<br>
+	Reproduction of the rankings on this site is prohibited.<br>
+	It may disappear or cannot be updated at some timing.<br>
+	Thank all developers of the plugin and Figma community.
+	</li>
+</ul>
+<ul class="ja">
+	<li>
+	このサイトのランキングは独自に集計してるもので、色々迷惑かかると面倒なので転載を禁止します。<br>
+	無理やり静的ページ化してるので集計時間・仕様が変わったり、URLが変わったり、更新されないことがあるかもです。最悪消えても仕方ない程度で見てください。<br>
+	Figmaコミュニティとプラグインの作者に感謝して使いましょう！
+	</li>
+</ul>
+</main>
+<footer>
+	<p><script>document.write(new Date().getFullYear());</script> Produced by <a href="https://www.figma.com/@kurokky">&copy;Kurokky</a></p>
+</footer>
+<script>
+const language = window.navigator.language
+let dom
+if (language == "ja"){
+	dom = document.getElementsByClassName("en")
+}else{
+	dom = document.getElementsByClassName("ja")
+}
+[].forEach.call(dom, (e) => {
+    e.style.display = 'none'
+})
+
+</script>
+
+</body>
+</html>
